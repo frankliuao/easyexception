@@ -1,0 +1,31 @@
+Metadata-Version: 1.2
+Name: easyexception
+Version: 0.0.1
+Summary: Easy custom error/warning/message exceptions.
+Home-page: https://pypi.python.org/pypi/easyexception
+Author: Ao Liu, Jie Gao
+Author-email: ao@aoliu.tech, geographer2008@gmail.com
+License: MIT
+Description: # easyexception
+        
+        Conveniently submit and print an error, warning, or message from your codes, and specify where the error, warning, or message came from.
+        
+        ### Purpose
+        When you
+        
+        ### Installation
+        Install easyexception using `pip`, or `pip3`
+        
+            pip install easyexception
+        
+        ### Repository
+        [GitHub page](https://github.com/frankliuao/easyexception)
+        
+Keywords: Exception,Easy
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
