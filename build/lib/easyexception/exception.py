@@ -12,7 +12,8 @@ def easyexception(origin, code, severity, msg):
     """
     Raise some kind of customized error/warning/message.
     :param origin: str, the caller file name
-    :param code: str, the section (func, class, etc) where AoException is called
+    :param code: str, the section (func, class, etc) where easyexception is
+    called
     :param severity: str, options are "Error", "Warning", "Message"
     :param msg: str, the message to be printed
     :return: NA.

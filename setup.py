@@ -5,7 +5,7 @@ with open("README.MD", "r") as fh:
 
 setup(
     name="easyexception",
-    version="0.0.1",
+    version="0.0.2",
     author="Ao Liu, Jie Gao",
     author_email="ao@aoliu.tech, geographer2008@gmail.com",
     description=("Easy-to-use custom error/warning/message exceptions."),
