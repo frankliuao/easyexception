@@ -10,6 +10,9 @@ In **easyexception**, this is solved by a simple trick, we combine all kinds of 
 where *severity* can be "Error", "Warning", or "Message"
 
 ### Usage
+To use the `easyexception` function, import it in Python:
+
+    from easyexception.exception import easyexception
 
 The program developer just calls the function to define the above information and deliver the message to the user screen. e.g. if you are developing a calculator program and the user puts in a negative number and then presses "Square Root". You want to throw a warning but not to stop the program, you may do:
 
