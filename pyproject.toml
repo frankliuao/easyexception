@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "easyexception"
+version = "0.0.2"
+description = "Easy-to-use custom error/warning/message exceptions."
+license = "MIT"
+authors = ["Ao Liu <ao@aoliu.tech>", "Jie Gao <geographer2008@gmail.com>"]
+readme = "README.MD"
+homepage = "https://pypi.python.org/pypi/easyexception"
+keywords = ["Exception", "Easy"]
+packages = [{include = "easyexception"}]
+include = ["easyexception/py.typed"]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
