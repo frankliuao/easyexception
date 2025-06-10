@@ -1,14 +1,17 @@
+from __future__ import annotations
+
 import warnings
+from typing import List
 
 
 class EasyError(Exception):
-    """Wrapper class for an Exception Error
-    """
-    def __init__(self, msg=""):
-        super(EasyError, self).__init__(msg)
+    """Wrapper class for an Exception Error."""
+
+    def __init__(self, msg: str = "") -> None:
+        super().__init__(msg)
 
 
-def easyexception(origin, code, severity, msg):
+def easyexception(origin: str, code: str, severity: str, msg: str) -> None:
     """
     Raise some kind of customized error/warning/message.
     :param origin: str, the caller file name
@@ -23,7 +26,7 @@ def easyexception(origin, code, severity, msg):
                   "Message: " + msg + "---\n"
         raise EasyError(message)
     elif severity.lower() == "warning":
-        message = "---Info: From " + origin + ": code " + code + "\n" + \
+        message = "---Warning: From " + origin + ": code " + code + "\n" + \
                   "Message: " + msg + "---\n"
         warnings.warn(message)
     elif severity.lower() == "message":
@@ -34,4 +37,4 @@ def easyexception(origin, code, severity, msg):
         pass
 
 
-__all__ = [_s for _s in dir() if not _s.startswith('_')]
+__all__: List[str] = ["EasyError", "easyexception"]
